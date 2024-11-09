@@ -1,0 +1,28 @@
+in this case I used 
+
+cout.precision(int n)         before printing the float
+
+
+then I used cout<<fixed<<(the variable)<<endl;
+
+
+
+
+
+example;:
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   double n;
+   n=1.23456789;
+   cout.precision(5);
+   cout<<fixed<<n<<endl;
+    return 0;
+}

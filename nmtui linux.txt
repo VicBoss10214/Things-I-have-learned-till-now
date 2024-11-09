@@ -1,0 +1,2 @@
+to set up the internet connection in lab, I had to use the "nmtui" code in the linux terminal
+Then I Added a device, named it, gave my username and password and finally activate it.

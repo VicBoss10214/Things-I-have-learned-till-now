@@ -1,0 +1,44 @@
+Width and Precision
+Width (x): Specifies the minimum number of characters to be printed. If the value to be printed is shorter than this width, it will be padded with spaces (or zeros if the 0 flag is used).
+Precision (y): For floating-point numbers, it specifies the number of digits to be printed after the decimal point. For strings, it specifies the maximum number of characters to be printed.
+Examples
+Floating-Point Numbers:
+printf("%8.2f", 123.456); // Output: "  123.46"
+
+8 is the width, ensuring at least 8 characters are printed.
+.2 is the precision, ensuring 2 digits after the decimal point.
+Strings:
+printf("%.5s", "Hello, World!"); // Output: "Hello"
+
+.5 specifies that only the first 5 characters of the string are printed.
+Integers:
+printf("%5d", 42); // Output: "   42"
+
+5 is the width, ensuring at least 5 characters are printed, with spaces padding the left.
+Combining Width and Precision
+You can combine width and precision to format the output precisely:
+
+printf("%10.4f", 3.1415926535); // Output: "    3.1416"
+
+10 is the width, ensuring at least 10 characters are printed.
+.4 is the precision, ensuring 4 digits after the decimal point.
+Example Program
+Here’s a simple program demonstrating these concepts:
+
+#include <stdio.h>
+
+int main() {
+    float num = 123.456;
+    printf("Width 10, Precision 2: %10.2f\n", num);
+    printf("Width 8, Precision 3: %8.3f\n", num);
+    printf("Width 6, Precision 1: %6.1f\n", num);
+    return 0;
+}
+
+This program will output:
+
+Width 10, Precision 2:     123.46
+Width 8, Precision 3:  123.456
+Width 6, Precision 1:  123.5
+
+Would you like to explore more about printf or any other C functions?
